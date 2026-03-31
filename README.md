@@ -4,7 +4,7 @@ Skills that teach Claude *how to think*, not *what to know*.
 
 ## The problem
 
-Large language models default to encyclopedic mode: ask about a theory, get a description of the theory. But in most real-world contexts — exams, consulting, analysis, decision-making — describing a framework is worthless. What matters is using it to *see something you couldn't see without it*.
+Large language models default to encyclopedic mode: ask about a theory, get a description of the theory. But in most real-world contexts: exams, consulting, analysis, decision-making, describing a framework is worthless. What matters is using it to *see something you couldn't see without it*.
 
 These skills encode transferable intellectual competencies as reusable instructions for Claude. They are domain-agnostic: the same skills work whether you're analyzing a small business, preparing for a law exam, or evaluating a grant proposal. The domain-specific content is loaded separately as a configuration file.
 
@@ -23,7 +23,7 @@ thinking-tools/
 
 **Three generic skills. One configuration pattern.**
 
-The skills define *how* to think. A separate domain-specific configuration skill (not included here — you build your own) provides *what* to think with: the frameworks, the evaluator profile, the connection map.
+The skills define *how* to think. A separate domain-specific configuration skill (not included here, you build your own) provides *what* to think with: the frameworks, the evaluator profile, the connection map.
 
 ## The skills
 
@@ -33,7 +33,7 @@ Applies theoretical frameworks as diagnostic instruments rather than definitions
 
 **Without this skill**, Claude says: "Agency theory, developed by Jensen and Meckling, proposes that..."
 
-**With this skill**, Claude says: "The bureaucracy here isn't driven by operational needs — it's the principal-agent dynamic. The owner's fear of delegation inflates surveillance costs beyond what the situation requires."
+**With this skill**, Claude says: "The bureaucracy here isn't driven by operational needs, it's the principal-agent dynamic. The owner's fear of delegation inflates surveillance costs beyond what the situation requires."
 
 The procedure: identify which framework the question activates → formulate the diagnostic question it answers → apply to the case (mechanism → nuance → consequence) → never describe the lens, describe what you see through it.
 
@@ -49,7 +49,7 @@ Works for professors, interviewers, clients, grant reviewers, or anyone whose ap
 
 Prevents silo thinking by systematically checking for productive connections when a single concept is solicited.
 
-The key discipline: a link must be **productive** (it enriches the analysis) not **decorative** (it shows off breadth). The skill consults a connection map, evaluates whether each candidate link actually changes the analysis, and integrates relevant links as natural extensions of the reasoning — not as afterthoughts.
+The key discipline: a link must be **productive** (it enriches the analysis) not **decorative** (it shows off breadth). The skill consults a connection map, evaluates whether each candidate link actually changes the analysis, and integrates relevant links as natural extensions of the reasoning, not as afterthoughts.
 
 ## Usage
 
@@ -88,15 +88,15 @@ The generic skills stay the same. The configuration changes per context. Swap th
 
 **Skills encode procedures, not content.** A skill tells Claude *how to reason* in a type of situation. Content belongs in the domain configuration or in the conversation context.
 
-**The productivity test governs everything.** Whether it's a cross-domain link, a theoretical reference, or an example — if it doesn't change the analysis, leave it out.
+**The productivity test governs everything.** Whether it's a cross-domain link, a theoretical reference, or an example: if it doesn't change the analysis, leave it out.
 
-**Anti-patterns are as important as patterns.** Each skill explicitly names what *not* to do. The Encyclopedia Entry, the Label Without the Because, the Web of Everything, the Forced Bridge — these failure modes are common enough to warrant explicit prevention.
+**Anti-patterns are as important as patterns.** Each skill explicitly names what *not* to do. The Encyclopedia Entry, the Label Without the Because, the Web of Everything, the Forced Bridge, these failure modes are common enough to warrant explicit prevention.
 
 **Transferability over specificity.** These skills should work for a first-year undergraduate and a senior consultant. The depth of application changes; the procedure doesn't.
 
 ## Origin
 
-These skills emerged from a concrete project: preparing for a university course in SME management. The course presented seven organizational theories as a diagnostic toolkit for consultants, but framed them as academic content. Reframing the theories as *tools* — and extracting the underlying intellectual competencies from the domain-specific content — produced skills that turned out to be useful far beyond that one course.
+These skills emerged from a concrete project: preparing for a university course in SME management. The course presented seven organizational theories as a diagnostic toolkit for consultants, but framed them as academic content. Reframing the theories as *tools*, and extracting the underlying intellectual competencies from the domain-specific content, produced skills that turned out to be useful far beyond that one course.
 
 The domain-specific configuration for that original course is not included here, but its structure serves as the reference implementation for the configuration pattern.
 
