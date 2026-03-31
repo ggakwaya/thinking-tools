@@ -100,3 +100,5 @@ These skills emerged from a concrete project: preparing for a university course 
 
 The domain-specific configuration for that original course is not included here, but its structure serves as the reference implementation for the configuration pattern.
 
+## License
+MIT
